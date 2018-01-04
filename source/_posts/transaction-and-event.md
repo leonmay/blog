@@ -1,11 +1,11 @@
 ---
-title: 事务与事件
+title: Transaction And Event
 date: 2016-09-21 12:05:00
-tags: 事务
+tags: base
 category: technology
 toc: true
 ---
-### 1. 事务
+### 1. 事务(Transaction)
 #### 概念
 事务(Transaction)是访问并可能更新数据库中各种数据项的一个程序执行单元(unit)。事务通常由高级数据库操纵语言或编程语言（如SQL，C++或Java）书写的用户程序的执行所引起，并用形如begin transaction和end transaction语句（或函数调用）来界定。事务由事务开始(begin transaction)和事务结束(end transaction)之间执行的全体操作组成。
 例如：在关系数据库中，一个事务可以是一条SQL语句，一组SQL语句或整个程序。
@@ -18,7 +18,7 @@ toc: true
 隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。
 持久性（durability）。持久性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。
 
-### 2. 事件
+### 2. 事件(Event)
 #### 构成要素
 （1）事件源：指能触发事件的对象，有时又称为事件的发送者和或事件的发布者。
 （2）侦听器：指能接收到事件消息的对象。
